@@ -17,4 +17,10 @@ class ItemController extends Controller
 
         $item->save();
         return response()->json(['success'=>'Data is successfully added']);
-    }}
+    }
+
+    public function show() {
+        $items = Item::all();
+        return response()->json($items);
+    }
+}

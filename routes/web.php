@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 Route::view('/items', 'item');
 Route::post('/item/post', [\App\Http\Controllers\ItemController::class, 'store']);
+Route::get('/items/detail', [\App\Http\Controllers\ItemController::class, 'show']);
